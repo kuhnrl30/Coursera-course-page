@@ -1,0 +1,120 @@
+body {
+	background-color: white;	
+	}
+	
+
+.intro {
+	text-align: left;	
+	color: #ff3737;
+	width: 400px;
+	margin: auto;
+	}
+
+a {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #ff3737;
+	
+	}
+	
+	
+		
+h1 {
+	color: #ff3737;
+	text-align: center;
+	}
+
+section {
+	background-color: #ff3737;
+	border: 1px solid black;
+	margin: 2px;
+	float: left;
+	}
+
+.section-head {
+	text-align: center;
+	border: 1px solid black;
+	float: right;
+	padding: 2px 10px 2px 10px;
+	font-size: 1.2em;
+	}
+
+section  p {
+	margin: 30px 2px 2px 2px;
+	padding: 5px;
+	width: calc(100% - 10px);
+	}
+
+	
+/* Begin styling the first menu box */	
+#objective .section-head {
+	background-color: white;	
+	color: black; 
+	}
+	
+	
+
+/* begin styling the second menu box */
+#results .section-head {
+	background-color: blue;	
+	color: white; }
+	
+#technical .section-head {
+	background-color: yellow;	
+	}
+	
+
+	
+	
+/* begin default or mobile first styling */
+@media screen and (max-width:766px) {
+	.row {
+		margin-top: 50px;
+		margin: auto;
+		width: 400px;
+		display: block;
+		}
+
+	.row div {
+		display: inline-block;
+		}
+	}
+
+/* medium or tablet size screen */	
+@media screen and (min-width:767px) {
+	.intro {
+		width: 700px;
+		}
+	.row {
+		width: 700px;
+		margin: auto;
+		}
+		
+	.col-md {
+		float: left;
+		display: inline-block;
+		width: 50%;
+		}
+	}
+
+/* large or desktop size screen */	
+@media screen and (min-width:992px) {
+	.intro {
+		width:900px;
+		}
+	.row {
+		width: 900px;
+		margin: auto;
+		}
+	
+	.col-lg, .col-md {
+		float: left;
+		display: inline;
+		width: 33.33%;
+		height: 100%;
+		}
+	.col-lg:after {
+		display:none;
+		}
+	}
+	
